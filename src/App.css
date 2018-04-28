@@ -1,0 +1,132 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  flex-grow: 1;
+  align-items: stretch;
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App-Container {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  align-items: stretch;
+
+  background-color: #026aa7;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+}
+
+.App {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  flex-grow: 1;
+  align-items: stretch;
+
+  padding: 7px;
+
+  overflow: auto;
+}
+
+.label-title {
+  margin: 13px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.board {
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  align-self: stretch;
+
+  background-color: steelblue;
+  color: white;
+
+  padding: 7px;
+
+  overflow: auto;
+}
+
+.list {
+  flex: none;
+  width: 270px;
+  height: 100%;
+
+  padding: 0;
+  margin: 7px;
+  border-radius: 3px;
+
+  background-color: white;
+  color: #333;
+
+  border: thin solid #DEDEDE;
+
+  box-sizing: border-box;
+}
+
+.list-header {
+  height: 50px;
+  font-weight: bold;
+  padding: 7px 11px;
+  border-bottom: thin solid #DEDEDE;
+}
+
+.list-title {
+  cursor: pointer;
+
+  white-space: nowrap;      /*keep text on one line */
+  overflow: hidden;         /*prevent text from being shown outside the border */
+  text-overflow: ellipsis;
+}
+
+.list-body {
+  max-height: 444px;
+  overflow-y: auto !important;
+
+  padding: 7px 11px;
+  background-color: #DEDEDE;
+
+  overflow-y: auto;
+}
+
+.list-footer {
+
+}
+
+.footer {
+  padding: 11px;
+}
+
+.footer input {
+  margin: 7px 0;
+}
+
+.task {
+  background-color: white;
+  color: #333;
+
+  border: thin solid #DEDEDE;
+  border-radius: 3px;
+
+  padding: 7px 11px;
+  margin: 11px 0;
+
+  cursor: pointer;  
+}
